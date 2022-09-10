@@ -92,7 +92,7 @@
   font-weight: 500;
 }
 .wrapper .container .content button:hover {
-  background-color: var(--nutral-Verydarkblue);
+  background-color: hsl(158deg, 37%, 24%);
   font-weight: 700;
 }
 .wrapper .attribution {
