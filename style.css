@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-darkcyan: hsl(158, 36%, 37%);
+  --primary-Cream: hsl(30, 38%, 92%);
+  --nutral-Verydarkblue: hsl(212, 21%, 14%);
+  --nutral-Darkgrayishblue: hsl(228, 12%, 48%);
+  --nutral-White: hsl(0, 0%, 100%);
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-Cream);
+}
+.wrapper .container {
+  margin: 0 auto;
+  display: flex;
+}
+.wrapper .container .wrap-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wrapper .container .image {
+  width: 270px;
+  height: 390px;
+  background-image: url(images/image-product-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 270px;
+  height: 390px;
+  background-color: var(--nutral-White);
+}
+.wrapper .container .content p,
+.wrapper .container .content span {
+  line-height: 20px;
+  font-family: Montserrat, serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--nutral-Darkgrayishblue);
+}
+.wrapper .container .content h1 {
+  font-family: Fraunces, serif;
+  line-height: 32px;
+  color: var(--nutral-Verydarkblue);
+}
+.wrapper .container .content span {
+  letter-spacing: 3px;
+}
+.wrapper .container .content .prices {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.wrapper .container .content .prices h1 {
+  font-size: 30px;
+  color: var(--primary-darkcyan);
+}
+.wrapper .container .content button {
+  height: 35px;
+  border: 0;
+  background-color: var(--primary-darkcyan);
+  border-radius: 5px;
+  color: var(--nutral-White);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: Montserrat, serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.wrapper .container .content button:hover {
+  background-color: var(--nutral-Verydarkblue);
+  font-weight: 700;
+}
+.wrapper .attribution {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 540px) {
+  .wrapper .wrap-content {
+    width: 270px;
+  }
+  .wrapper .wrap-content .image {
+    background-image: url(images/image-product-mobile.jpg);
+    height: 200px;
+  }
+}/*# sourceMappingURL=style.css.map */
